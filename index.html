@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-browse-ds="ember-studio" data-browse-design-system="ember-studio">
+<head>
+    <meta charset="UTF-8">
+    <title>Field Notes (Pill Pagination)</title>
+    <meta name="description" content="Pills pagination with collectible lifestyle field-note cards, fluid page windowing, and keyboard navigation.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-layer"></div>
+    <main class="pag-container">
+        <h1 class="pag-title">Field Notes lifestyle journal</h1>
+        <div class="pag-cards" id="cards-container"></div>
+        <p class="pag-status" id="page-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <nav class="pag pag--pills" aria-label="Pills pagination">
+            <input type="radio" name="page" id="p1" class="pag-r" aria-label="Page 1">
+            <input type="radio" name="page" id="p2" class="pag-r" checked aria-label="Page 2">
+            <input type="radio" name="page" id="p3" class="pag-r" aria-label="Page 3">
+            <input type="radio" name="page" id="p4" class="pag-r" aria-label="Page 4">
+            <input type="radio" name="page" id="p5" class="pag-r" aria-label="Page 5">
+            <input type="radio" name="page" id="p6" class="pag-r" aria-label="Page 6">
+            <input type="radio" name="page" id="p7" class="pag-r" aria-label="Page 7">
+            <input type="radio" name="page" id="p8" class="pag-r" aria-label="Page 8">
+            <input type="radio" name="page" id="p9" class="pag-r" aria-label="Page 9">
+            <div class="pag__nav-zone pag__nav-zone--prev" aria-hidden="true">
+                <span class="pag__arrow pag__arrow--prev pag__arrow--off" data-when="1"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
+                <label for="p1" class="pag__arrow pag__arrow--prev" data-when="2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></label>
+                <label for="p2" class="pag__arrow pag__arrow--prev" data-when="3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></label>
+                <label for="p3" class="pag__arrow pag__arrow--prev" data-when="4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></label>
+                <label for="p4" class="pag__arrow pag__arrow--prev" data-when="5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></label>
+                <label for="p5" class="pag__arrow pag__arrow--prev" data-when="6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></label>
+                <label for="p6" class="pag__arrow pag__arrow--prev" data-when="7"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></label>
+                <label for="p7" class="pag__arrow pag__arrow--prev" data-when="8"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></label>
+                <label for="p8" class="pag__arrow pag__arrow--prev" data-when="9"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></label>
+            </div>
+            <label for="p1" class="pag__item pag__pill--p1">1</label>
+            <span class="pag__ellipsis pag__ellipsis--left" aria-hidden="true">...</span>
+            <label for="p2" class="pag__item pag__pill--p2">2</label>
+            <label for="p3" class="pag__item pag__pill--p3">3</label>
+            <label for="p4" class="pag__item pag__pill--p4">4</label>
+            <label for="p5" class="pag__item pag__pill--p5">5</label>
+            <label for="p6" class="pag__item pag__pill--p6">6</label>
+            <label for="p7" class="pag__item pag__pill--p7">7</label>
+            <label for="p8" class="pag__item pag__pill--p8">8</label>
+            <span class="pag__ellipsis pag__ellipsis--right" aria-hidden="true">...</span>
+            <label for="p9" class="pag__item pag__pill--p9">9</label>
+            <div class="pag__nav-zone pag__nav-zone--next" aria-hidden="true">
+                <label for="p2" class="pag__arrow pag__arrow--next" data-when="1"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></label>
+                <label for="p3" class="pag__arrow pag__arrow--next" data-when="2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></label>
+                <label for="p4" class="pag__arrow pag__arrow--next" data-when="3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></label>
+                <label for="p5" class="pag__arrow pag__arrow--next" data-when="4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></label>
+                <label for="p6" class="pag__arrow pag__arrow--next" data-when="5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></label>
+                <label for="p7" class="pag__arrow pag__arrow--next" data-when="6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></label>
+                <label for="p8" class="pag__arrow pag__arrow--next" data-when="7"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></label>
+                <label for="p9" class="pag__arrow pag__arrow--next" data-when="8"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></label>
+                <span class="pag__arrow pag__arrow--next pag__arrow--off" data-when="9"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span>
+            </div>
+        </nav>
+        <footer class="pag-footer">
+            <span class="pag-footer__keys"><kbd>&larr;</kbd> <kbd>&rarr;</kbd> to navigate &middot; <kbd>Home</kbd> <kbd>End</kbd> to jump</span>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1242 @@
+/* Auto-generated from DESIGN.md — do not edit manually */
+
+:root {
+  /* colors */
+  --color-primary: #ff385c;
+  --color-primary-active: #e00b41;
+  --color-primary-disabled: #ffd1da;
+  --color-primary-error-text: #c13515;
+  --color-primary-error-text-hover: #b32505;
+  --color-luxe: #460479;
+  --color-plus: #92174d;
+  --color-ink: #222222;
+  --color-body: #3f3f3f;
+  --color-muted: #6a6a6a;
+  --color-muted-soft: #666666;
+  --color-hairline: #dddddd;
+  --color-hairline-soft: #ebebeb;
+  --color-border-strong: #c1c1c1;
+  --color-canvas: #ffffff;
+  --color-surface-soft: #f7f7f7;
+  --color-surface-card: #ffffff;
+  --color-surface-strong: #f2f2f2;
+  --color-on-primary: #ffffff;
+  --color-on-dark: #ffffff;
+  --color-legal-link: #428bff;
+  --color-star-rating: #222222;
+  --color-scrim: #000000;
+
+  /* semantic color bridge */
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-primary: #ff385c;
+  --color-primary-hover: #e00b41;
+  --color-text-primary: #222222;
+  --color-text-secondary: #3f3f3f;
+  --color-neutral: #666666;
+  --color-border: #dddddd;
+  --color-on-primary: #ffffff;
+  --color-success: #10B981;
+  --color-error: #c13515;
+  --color-warning: #F59E0B;
+
+  /* derived — auto-generated from primary */
+  --ghost-bg: rgba(255, 56, 92, 0.03);
+  --ghost-hover: rgba(255, 56, 92, 0.06);
+  --focus-ring: rgba(255, 56, 92, 0.12);
+  --shadow-light: rgba(34, 34, 34, 0.06);
+  --shadow-heavy: rgba(0, 0, 0, 0.4);
+  --bubble-me-text: #FFFFFF;
+  --bubble-them-bg: #f7f7f7;
+  --bubble-them-text-color: #222222;
+  --online-glow: rgba(16, 185, 129, 0.4);
+  --primary-glow: rgba(255, 56, 92, 0.35);
+  --scrim: rgba(0, 0, 0, 0.4);
+  --bubble-me-time: rgba(255, 255, 255, 0.55);
+  --bubble-me-status: rgba(255, 255, 255, 0.5);
+  --bubble-me-status-read: #ff9cae;
+  --skeleton-line-light: rgba(0, 0, 0, 0.04);
+  --skeleton-line-peak: rgba(0, 0, 0, 0.08);
+
+  /* elevation — extracted from DESIGN.md */
+  --card-shadow: rgba(0,0,0,0.02) 0 0 0 1px, rgba(0,0,0,0.04) 0 2px 6px, rgba(0,0,0,0.1) 0 4px 8px;
+  --card-shadow-dark: 0 4px 16px rgba(0, 0, 0, 0.4), 0 1px 4px rgba(0, 0, 0, 0.3);
+
+  /* dark theme — auto-derived */
+  --dark-bg: #111217;
+  --dark-surface: #22252e;
+  --dark-surface-raised: #2b2f3a;
+  --dark-text: #e6e8ee;
+  --dark-text-muted: #b4b8c2;
+  --dark-text-dim: #abafba;
+  --dark-border: #6b7280;
+  --dark-border-subtle: #2f333e;
+  --dark-primary: #ff4365;
+  --color-primary-dark-readable: #ff4365;
+  --dark-ghost-bg: rgba(255, 56, 92, 0.05);
+  --dark-ghost-hover: rgba(255, 56, 92, 0.1);
+  --dark-focus-ring: rgba(255, 56, 92, 0.25);
+  --dark-bubble-them-bg: #2b2f3a;
+  --dark-bubble-them-text-color: #e6e8ee;
+  --dark-skeleton-line-light: rgba(255, 255, 255, 0.06);
+  --dark-skeleton-line-peak: rgba(255, 255, 255, 0.12);
+
+  /* typography — fonts */
+  --font-display: 'Airbnb Cereal VF', 'Inter', system-ui, sans-serif;
+  --font-body: 'Airbnb Cereal VF', 'Inter', system-ui, sans-serif;
+  --font-code: 'JetBrains Mono', 'SF Mono', monospace;
+
+  /* typography — scale */
+  --text-display: 28px;
+  --text-headline: 22px;
+  --text-section-heading: 21px;
+  --text-subhead: 20px;
+  --text-rating-display: 64px;
+  --text-body: 16px;
+  --text-small: 14px;
+  --text-caption: 14px;
+  --text-overline: 11px;
+  --text-button-md: 16px;
+  --text-button-sm: 14px;
+  --text-link: 14px;
+  --text-nav-link: 16px;
+
+  /* spacing */
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-base: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  --spacing-section: 64px;
+
+  /* spacing — numeric scale */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+
+  /* border-radius */
+  --rounded-none: 0px;
+  --rounded-xs: 4px;
+  --rounded-sm: 8px;
+  --rounded-md: 14px;
+  --rounded-lg: 20px;
+  --rounded-xl: 32px;
+  --rounded-full: 9999px;
+  --rounded-r9999: 9999px;
+
+  /* components */
+  --button-primary-font-size: 16px;
+  --button-primary-radius: 8px;
+  --button-primary-padding: 14px 24px;
+  --button-primary-height: 48px;
+  --button-primary-active-radius: 8px;
+  --button-primary-disabled-radius: 8px;
+  --button-secondary-font-size: 16px;
+  --button-secondary-radius: 8px;
+  --button-secondary-padding: 13px 23px;
+  --button-secondary-height: 48px;
+  --button-tertiary-text-font-size: 16px;
+  --button-pill-rausch-font-size: 14px;
+  --button-pill-rausch-radius: 9999px;
+  --button-pill-rausch-padding: 10px 20px;
+  --search-orb-radius: 9999px;
+  --search-orb-height: 48px;
+  --icon-button-circle-radius: 9999px;
+  --icon-button-circle-height: 32px;
+  --icon-button-outline-radius: 9999px;
+  --icon-button-outline-height: 40px;
+  --top-nav-font-size: 16px;
+  --top-nav-height: 80px;
+  --product-tab-active-font-size: 16px;
+  --product-tab-active-radius: 0px;
+  --product-tab-inactive-font-size: 16px;
+  --search-bar-pill-font-size: 14px;
+  --search-bar-pill-radius: 9999px;
+  --search-bar-pill-padding: 14px 24px;
+  --search-bar-pill-height: 64px;
+  --search-field-segment-font-size: 14px;
+  --search-field-segment-padding: 8px 24px;
+  --category-strip-font-size: 14px;
+  --category-tab-active-font-size: 14px;
+  --category-tab-active-radius: 0px;
+  --property-card-font-size: 14px;
+  --property-card-radius: 14px;
+  --property-card-photo-radius: 14px;
+  --experience-card-font-size: 16px;
+  --experience-card-radius: 14px;
+  --city-link-block-font-size: 16px;
+  --rating-display-card-font-size: 64px;
+  --guest-favorite-badge-font-size: 11px;
+  --guest-favorite-badge-radius: 9999px;
+  --guest-favorite-badge-padding: 4px 10px;
+  --new-tag-font-size: 8px;
+  --new-tag-radius: 9999px;
+  --new-tag-padding: 2px 6px;
+  --amenity-row-font-size: 16px;
+  --amenity-row-padding: 12px 0;
+  --reviews-card-font-size: 14px;
+  --host-card-font-size: 14px;
+  --host-card-radius: 14px;
+  --host-card-padding: 24px;
+  --reservation-card-font-size: 16px;
+  --reservation-card-radius: 14px;
+  --reservation-card-padding: 24px;
+  --date-picker-day-font-size: 14px;
+  --date-picker-day-radius: 9999px;
+  --date-picker-day-selected-radius: 9999px;
+  --text-input-font-size: 16px;
+  --text-input-radius: 8px;
+  --text-input-padding: 14px 12px;
+  --text-input-height: 56px;
+  --footer-light-font-size: 14px;
+  --footer-light-padding: 48px 80px;
+  --footer-link-font-size: 14px;
+  --legal-band-font-size: 13px;
+
+  /* component bridge */
+  --buttons-height-small: 32px;
+  --buttons-height-medium: 48px;
+  --cards-radius: 14px;
+  --inputs-radius: 8px;
+  --inputs-padding: 14px 12px;
+  --search-radius: 9999px;
+  --chips-padding: 4px 10px;
+  --chips-font-size: 11px;
+  --chips-radius: 9999px;
+  --lists-padding: 12px 16px;
+
+}
+
+:root {
+    --bg:              var(--color-background);
+    --surface:         var(--color-surface);
+    --primary:         var(--color-primary);
+    --primary-hover:   var(--color-primary-hover);
+    --text:            var(--color-text-primary);
+    --text-muted:      var(--color-secondary-light-readable, color-mix(in srgb, var(--color-text-secondary) 65%, var(--color-text-primary) 35%));
+    --text-dim:        var(--color-neutral-readable, color-mix(in srgb, var(--color-neutral) 65%, var(--color-text-primary) 35%));
+    --border:          var(--color-border);
+    --success:         var(--color-success);
+    --error:           var(--color-error);
+    --warning:         var(--color-warning);
+    --shadow:          var(--card-shadow, 0 2px 12px var(--shadow-light));
+    --shadow-hover:    var(--card-shadow-hover, var(--shadow));
+    --ghost:           var(--ghost-bg);
+    --ghost-active:    var(--ghost-hover);
+    /* Focus ring ink. NOT --focus-ring: every design system authors that token at
+       12% alpha in light / 25% in dark, which composites to ~1.1:1 against the
+       canvas — an invisible focus indicator. --primary-ink is the harness's
+       theme-readable primary (contrast-guaranteed against the canvas in both
+       themes), so it clears the WCAG 2.2 3:1 non-text floor everywhere. */
+    --ring:            var(--primary-ink, var(--color-primary));
+    --skel-line:       var(--skeleton-line-light);
+    --skel-peak:       var(--skeleton-line-peak);
+    --pag-accent-ink:  color-mix(in srgb, var(--primary) 20%, var(--text));
+    --pag-accent-fill: var(--selection-fill, var(--primary));
+    --pag-accent-fill-hover: var(--selection-fill-hover, var(--primary-hover));
+    --pag-accent-text: var(--selection-ink, var(--color-on-primary));
+
+    /* Adaptive control radius for the buttons + pagination bar. On round systems
+       (--rounded-r9999 huge) this resolves to fully-round pill ends; on sharp
+       systems like Tensor, where the DS caps its "full" round low (e.g. 20px)
+       and cards sit at ~4px, the calc goes negative and it falls back to the
+       card radius — so controls stay in the design system's geometry instead of
+       reading as off-identity near-pills. NOT --chips-radius (Tensor authors that
+       at 20px, which is exactly the near-circle we're avoiding). */
+    --pag-control-radius: max(var(--cards-radius, 4px), calc(var(--rounded-r9999, 9999px) - 3rem));
+
+    --font-heading: var(--font-display);
+    --font-ui:      var(--font-body);
+
+    /* ---- Concentric corners -------------------------------------------
+       Three related values instead of one radius reused everywhere:
+
+         --field-card-radius   outer frame — the card
+         --field-card-inset    the gap between card edge and inner frame
+         --field-glass-radius  inner frame = outer radius - that gap
+
+       Giving a nested frame the SAME radius as its parent is the classic
+       non-concentric mistake, and it is what made this card stop reading as
+       rounded: at a shared 14px the card corner and the glass corner draw the
+       same arc at two different offsets, so their curves converge instead of
+       running parallel and the outer frame flattens by comparison. Subtracting
+       the inset puts both arcs on one centre, which is what actually makes the
+       card corner read round.
+
+       The outer frame runs 1.3x the card token rather than sitting on it flat.
+       These are the tallest surfaces in the set — a 496px full-bleed
+       photograph, not a 120px widget — and a radius that reads generous at
+       widget scale reads clipped at this one. Scaling instead of adding a
+       fixed step keeps every system in its own geometry: soft ones open up
+       (Nebula 14 -> 18) while sharp ones stay sharp (Tensor 4 -> 5), which a
+       "+ --spacing-2" bump would not do — it would have doubled Tensor's
+       corner and pulled it off-identity.
+
+       max() keeps the inner radius from going negative when a system's card
+       token is smaller than the inset. */
+    /* A larger gap so the glass panel floats with more air off the card edge. */
+    --field-card-inset:   var(--spacing-4);
+    /* 2.1x: on rounded systems the small footer controls resolve to full pills,
+       so the card opens up generously to read as part of that same soft family;
+       the multiplier is sized so that, after subtracting the (now larger) inset,
+       the concentric glass corner still lands at roughly the controls' effective
+       corner — card, glass, and buttons then share one curvature. Sharp systems
+       stay sharp by proportion (Tensor 4 -> ~8). */
+    --field-card-radius:  calc(var(--cards-radius) * 2.4);
+    /* Concentric inner corner, but floored at the DS card token: on systems
+       where the (large) inset would eat most of the card radius, the glass would
+       otherwise render SHARPER than the footer buttons it contains — a box
+       sharper than its own controls. The floor keeps the panel at least as round
+       as --cards-radius (which is the buttons' base corner), so the info box is
+       never sharper than the buttons. */
+    --field-glass-radius: max(var(--cards-radius), calc(var(--field-card-radius) - var(--field-card-inset)));
+}
+
+body.dark {
+    color-scheme: dark;
+    --bg:              var(--dark-bg);
+    --surface:         var(--dark-surface);
+    --text:            var(--dark-text);
+    --text-muted:      var(--dark-text-muted);
+    --text-dim:        var(--dark-text-dim);
+    --border:          var(--dark-border);
+    --shadow:          var(--card-shadow-dark, 0 2px 12px var(--shadow-heavy));
+    --shadow-hover:    var(--card-shadow-hover-dark, var(--shadow));
+    --ghost:           var(--dark-ghost-bg);
+    --ghost-active:    var(--dark-ghost-hover);
+    --ring:            var(--primary-ink, var(--color-primary));
+    --skel-line:       var(--dark-skeleton-line-light);
+    --skel-peak:       var(--dark-skeleton-line-peak);
+    --pag-accent-ink:  color-mix(in srgb, var(--primary) 20%, var(--text));
+    --pag-accent-fill: var(--selection-fill, var(--primary));
+    --pag-accent-fill-hover: var(--selection-fill-hover, var(--primary-hover));
+    --pag-accent-text: var(--selection-ink, var(--color-on-primary));
+}
+
+*,
+*::before,
+*::after {
+    margin: var(--pills-spacing-root-margin, 0);
+    padding: var(--pills-spacing-root-padding, 0);
+    box-sizing: border-box;
+}
+
+/* Keep the interaction affordance consistent across native buttons, links,
+   and the label-backed pagination controls. */
+:where(button:not(:disabled), a[href], label[for]),
+:where(button:not(:disabled), a[href], label[for]) * {
+    cursor: pointer;
+}
+
+body {
+    min-height: var(--pills-dimension-body-min-height, 100dvh);
+    font-family: var(--font-ui);
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--pills-motion-body-transition, background 0.4s ease, color 0.4s ease);
+}
+
+.bg-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background: var(--bg);
+    transition: var(--pills-motion-bg-layer-transition, background 0.5s ease);
+}
+
+.pag-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-8) var(--spacing-6);
+    width: var(--pills-dimension-pag-container-width, 100%);
+    max-width: var(--pills-dimension-pag-container-max-width, 72rem);
+}
+
+.pag-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--pills-dimension-pag-header-width, 100%);
+}
+
+.pag-header__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-headline);
+    font-weight: var(--pills-typography-pag-header-title-font-weight, 700);
+    color: var(--text);
+    letter-spacing: var(--pills-typography-pag-header-title-letter-spacing, -0.03em);
+    transition: var(--pills-motion-pag-header-title-transition, color 0.4s ease);
+}
+
+.pag-header__emph {
+    color: var(--pag-accent-ink);
+}
+
+.pag-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+    width: var(--pills-dimension-pag-footer-width, 100%);
+    padding-top: var(--spacing-1);
+    border-top: 0;
+    transition: var(--pills-motion-pag-footer-transition, border-color 0.4s ease);
+}
+
+.pag-footer__keys {
+    font-family: var(--font-ui);
+    font-size: var(--text-overline);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    transition: var(--pills-motion-pag-footer-keys-transition, color 0.4s ease);
+}
+
+.pag-footer__keys kbd {
+    font-family: var(--font-ui);
+    font-size: var(--text-overline);
+    padding: var(--spacing-xxs) var(--spacing-1);
+    background: var(--ghost);
+    border: 1px solid var(--border);
+    border-radius: var(--rounded-xs);
+    color: var(--text);
+    transition: var(--pills-motion-pag-footer-keys-kbd-transition, background 0.4s ease, border-color 0.4s ease, color 0.4s ease);
+}
+
+.pag-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Field Notes — glassmorphic travel journal.
+   Each card is a full-bleed photograph with a floating frosted-glass panel
+   holding the note. The glass is token-tinted (retones per design system) and
+   kept opaque enough that its text always clears WCAG 4.5:1 over any photo —
+   the blur/saturate is the glass cue, the opacity is the contrast guarantee. */
+.pag-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-5);
+    width: 100%;
+    min-height: 31rem;
+}
+
+.card {
+    position: relative;
+    min-width: 0;
+    height: 31rem;
+    overflow: hidden;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--field-card-radius);
+    box-shadow: var(--shadow);
+    isolation: isolate;
+    animation: card-reveal 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--enter-i, 0) * 60ms);
+    transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+@keyframes card-reveal {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+    border-color: color-mix(in srgb, var(--pag-accent-fill) 38%, var(--border));
+    box-shadow: var(--shadow-hover);
+}
+
+/* ---------- Photography (full bleed) ---------- */
+
+.card__photo {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.06) contrast(1.02);
+    transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1), filter 300ms ease;
+}
+
+/* No zoom — the photo stays still; hover life comes from the glass panel
+   rising + an accent edge and a gentle light lift on the image. */
+.card:hover .card__photo {
+    filter: saturate(1.16) contrast(1.05) brightness(1.04);
+}
+
+/* Depth wash so the top chips read and the glass panel lifts off the image.
+   Photo-anchored inks, deliberately not themable. */
+.card__photo-scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+        linear-gradient(180deg, rgba(8, 11, 16, 0.42) 0%, transparent 26% 40%, rgba(8, 11, 16, 0.30) 100%);
+}
+
+/* Season window — a frosted glass pill on the exposed photo. */
+.card__when {
+    position: absolute;
+    z-index: 2;
+    /* Same inset as the glass panel, so the two floating elements sit on one
+       margin off the card edge. */
+    top: var(--field-card-inset);
+    left: var(--field-card-inset);
+    display: inline-flex;
+    align-items: center;
+    gap: calc(var(--spacing-1) + 1px);
+    min-height: 1.95rem;
+    padding: 0 var(--spacing-3) 0 calc(var(--spacing-3) - 2px);
+    color: #fff;
+    background: rgba(18, 22, 28, 0.34);
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: var(--chips-radius);
+    -webkit-backdrop-filter: blur(10px) saturate(1.3);
+    backdrop-filter: blur(10px) saturate(1.3);
+    font-size: var(--text-small);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card__when svg { width: 0.98rem; height: 0.98rem; opacity: 0.95; }
+
+/* ---------- Floating glass panel ---------- */
+
+.card__glass {
+    position: absolute;
+    z-index: 2;
+    /* Inset drives --field-glass-radius; the two must move together or the
+       corners stop being concentric. */
+    left: var(--field-card-inset);
+    right: var(--field-card-inset);
+    bottom: var(--field-card-inset);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    /* Even inset on all four sides — the footer controls sit off the bottom
+       edge by exactly the margin the text holds off the left and right. */
+    padding: var(--spacing-5);
+    /* Dense frosted glass: a high-opacity, milky token-tinted surface with a
+       soft top-down sheen so it reads as thick frosted glass (not a flat card),
+       while the opacity keeps text contrast at the solid-surface ratio. The
+       heavy blur/saturate below diffuses the photo into the frost.
+       Solid fallback for engines without backdrop-filter. */
+    background:
+        linear-gradient(158deg, color-mix(in srgb, var(--surface) 34%, transparent), transparent 54%),
+        color-mix(in srgb, var(--surface) 94%, transparent);
+    border: 1px solid color-mix(in srgb, var(--text) 14%, transparent);
+    /* Inner frame of the concentric pair: the panel is inset by
+       --field-card-inset on three sides, so its corner is the card's radius
+       minus that inset. Matching the card radius outright (the previous rule)
+       is what flattened the card corner — see the note in variables.css. */
+    border-radius: var(--field-glass-radius);
+    box-shadow:
+        0 10px 30px rgba(8, 11, 16, 0.24),
+        inset 0 1px 0 color-mix(in srgb, var(--surface) 78%, transparent);
+    -webkit-backdrop-filter: blur(30px) saturate(1.5) brightness(1.03);
+    backdrop-filter: blur(30px) saturate(1.5) brightness(1.03);
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), border-color 260ms ease, box-shadow 260ms ease;
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    /* Still milky (86%) so it reads as dense frosted glass, with the same sheen;
+       the heavy blur behind it diffuses the photo into the frost. */
+    .card__glass {
+        background:
+            linear-gradient(158deg, color-mix(in srgb, var(--surface) 30%, transparent), transparent 54%),
+            color-mix(in srgb, var(--surface) 86%, transparent);
+    }
+}
+
+/* Hover: no box shift — the panel stays put; life comes from an accent edge,
+   a deeper shadow, and the category glyph revealing on the photo above. */
+.card:hover .card__glass {
+    border-color: color-mix(in srgb, var(--pag-accent-fill) 42%, color-mix(in srgb, var(--text) 12%, transparent));
+    box-shadow:
+        0 16px 38px rgba(8, 11, 16, 0.30),
+        inset 0 1px 0 color-mix(in srgb, var(--surface) 55%, transparent);
+}
+
+/* Category glyph — a quiet, glassy watermark in the exposed photo area. Kept
+   subtle (small, translucent, thin-stroked) so it reads as part of the frosted
+   aesthetic rather than a loud badge. */
+.card__hover-icon {
+    position: absolute;
+    z-index: 1;
+    top: 1.15rem;
+    right: 1.15rem;
+    display: grid;
+    place-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transform: scale(0.82);
+    pointer-events: none;
+    filter: drop-shadow(0 1px 5px rgba(4, 7, 10, 0.45));
+    transition: opacity 300ms ease, transform 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card__hover-icon svg { width: 1.55rem; height: 1.55rem; stroke-width: 1.5; }
+
+.card:hover .card__hover-icon {
+    opacity: 0.62;
+    transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card__hover-icon { transition: opacity 200ms ease; transform: scale(1); }
+}
+
+/* Location line: a bolder flag + city lockup that anchors the note. */
+.card__loc {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    min-width: 0;
+    color: var(--pag-accent-ink);
+    font-size: var(--text-small);
+    font-weight: 750;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.card__flag {
+    font-size: 1.3rem;
+    line-height: 1;
+    filter: drop-shadow(0 1px 2px rgba(8, 11, 16, 0.18));
+}
+
+.card__city {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card__title {
+    color: var(--text);
+    font-family: var(--font-heading);
+    font-size: var(--text-subhead);
+    font-weight: 750;
+    line-height: 1.14;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+}
+
+.card__desc {
+    display: -webkit-box;
+    min-height: 2.9em;
+    overflow: hidden;
+    color: var(--text-muted);
+    font-size: var(--text-small);
+    line-height: 1.45;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/* Three-stop route — icon-led rows on hairlines. */
+.card__route {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-xxs);
+    padding-block: var(--spacing-2);
+    border-top: 1px solid color-mix(in srgb, var(--text) 12%, transparent);
+    list-style: none;
+}
+
+.card__route li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    min-width: 0;
+    color: var(--text);
+    font-size: var(--text-overline);
+    font-weight: 650;
+    line-height: 1.2;
+}
+
+.card__route li svg {
+    flex: 0 0 auto;
+    width: 0.85rem;
+    height: 0.85rem;
+    color: var(--pag-accent-ink);
+}
+
+.card__route li span {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ---------- Footer: entry reference + Explore ---------- */
+
+.card__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-3);
+    margin-top: var(--spacing-2);
+    padding-top: var(--spacing-1);
+}
+
+/* A single pin names the useful, real-world place behind the note. The city and
+   country remain in the eyebrow, so this line can stay concise and specific. */
+.card__place {
+    display: inline-flex;
+    flex: 0 1 auto;
+    width: auto;
+    align-items: center;
+    gap: 0.35rem;
+    min-width: 0;
+    max-width: calc(100% - 6.75rem);
+    min-height: 2.15rem;
+    padding: 0 var(--spacing-3);
+    color: var(--pag-accent-ink);
+    background: color-mix(in srgb, var(--pag-accent-fill) 14%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--pag-accent-fill) 30%, var(--border));
+    border-radius: var(--pag-control-radius);
+    font-family: var(--font-ui);
+    font-size: var(--text-overline);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.card__place svg {
+    flex: 0 0 auto;
+    width: 0.82rem;
+    height: 0.82rem;
+    color: var(--pag-accent-ink);
+    opacity: 0.72;
+}
+
+.card__place span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+}
+
+.card__place:hover {
+    color: var(--text);
+    background: color-mix(in srgb, var(--pag-accent-fill) 23%, var(--surface));
+    border-color: color-mix(in srgb, var(--pag-accent-fill) 52%, var(--border));
+}
+
+.card__place:hover span {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.18em;
+}
+
+.card__place:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+}
+
+.card__explore {
+    display: inline-flex;
+    min-height: 2.15rem;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-1);
+    padding: 0 var(--spacing-3);
+    color: var(--pag-accent-ink);
+    background: color-mix(in srgb, var(--surface) 60%, transparent);
+    border: 1px solid color-mix(in srgb, var(--text) 14%, transparent);
+    border-radius: var(--pag-control-radius);
+    font-family: var(--font-ui);
+    font-size: var(--text-overline);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.card__explore:hover,
+.card__explore.is-active {
+    color: var(--pag-accent-text);
+    background: var(--pag-accent-fill);
+    border-color: var(--pag-accent-fill);
+}
+
+.card__explore:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+}
+
+.card__explore-icon,
+.card__explore-icon svg {
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+/* Icons and text are presentational parts of their parent controls. Let the
+   link/button own the whole hit area so its cursor cannot fragment on hover. */
+.card__place > *,
+.card__explore > * {
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card { animation: none; }
+    .card__photo,
+    .card__glass { transition: none; }
+    .card:hover .card__photo { transform: none; }
+    .card:hover .card__glass { transform: none; }
+}
+
+@media (max-width: 900px) {
+    .pag-cards { grid-template-columns: 1fr; min-height: auto; }
+    .card { width: min(100%, 33rem); justify-self: center; }
+}
+
+.pag-r {
+    position: absolute;
+    width: var(--pills-dimension-pag-r-width, 1px);
+    height: var(--pills-dimension-pag-r-height, 1px);
+    padding: var(--pills-spacing-pag-r-padding, 0);
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: var(--pills-border-pag-r-border, 0);
+}
+
+.pag:has(#p1:focus-visible) .pag__pill--p1,
+.pag:has(#p2:focus-visible) .pag__pill--p2,
+.pag:has(#p3:focus-visible) .pag__pill--p3,
+.pag:has(#p4:focus-visible) .pag__pill--p4,
+.pag:has(#p5:focus-visible) .pag__pill--p5,
+.pag:has(#p6:focus-visible) .pag__pill--p6,
+.pag:has(#p7:focus-visible) .pag__pill--p7,
+.pag:has(#p8:focus-visible) .pag__pill--p8,
+.pag:has(#p9:focus-visible) .pag__pill--p9 {
+    outline: 2px solid var(--ring);
+    outline-offset: 0px;
+}
+
+.pag {
+    display: flex;
+    align-items: center;
+    /* spacing-2 (not spacing-1) so a focused pill's 2px outline + 2px offset
+       clears its neighbours instead of overlapping the adjacent number. */
+    gap: var(--spacing-2);
+    min-height: calc(var(--buttons-height-small) + var(--spacing-3) * 2);
+    padding: var(--spacing-3);
+    background: color-mix(in srgb, var(--surface) 92%, var(--primary) 8%);
+    border: 1px solid var(--border);
+    border-radius: var(--pag-control-radius);
+    box-shadow: var(--shadow);
+}
+
+.pag::before,
+.pag::after {
+    display: inline-flex;
+    align-items: center;
+    align-self: stretch;
+    /* Same tinted-panel correction as the ellipsis: bare --text-muted loses
+       ~0.4 of ratio on the 8% primary tint of the pill bar. */
+    color: color-mix(in srgb, var(--text-muted) 70%, var(--text));
+    font-family: var(--font-code);
+    font-size: var(--text-overline);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.pag::before {
+    content: 'ADVENTURES';
+    padding-inline: var(--spacing-2) var(--spacing-3);
+    border-right: 1px solid var(--border);
+}
+
+.pag::after {
+    content: '02 / 09';
+    min-width: 4.4rem;
+    justify-content: center;
+    margin-left: var(--spacing-2);
+    padding-left: var(--spacing-3);
+    color: var(--pag-accent-ink);
+    border-left: 1px solid var(--border);
+}
+
+.pag:has(input:nth-of-type(1):checked)::after { content: '01 / 09'; }
+.pag:has(input:nth-of-type(2):checked)::after { content: '02 / 09'; }
+.pag:has(input:nth-of-type(3):checked)::after { content: '03 / 09'; }
+.pag:has(input:nth-of-type(4):checked)::after { content: '04 / 09'; }
+.pag:has(input:nth-of-type(5):checked)::after { content: '05 / 09'; }
+.pag:has(input:nth-of-type(6):checked)::after { content: '06 / 09'; }
+.pag:has(input:nth-of-type(7):checked)::after { content: '07 / 09'; }
+.pag:has(input:nth-of-type(8):checked)::after { content: '08 / 09'; }
+.pag:has(input:nth-of-type(9):checked)::after { content: '09 / 09'; }
+
+@media (max-width: 620px) {
+    .pag::before,
+    .pag::after { display: none; }
+    .pag { max-width: 100%; padding: var(--spacing-2); }
+}
+
+/*
+ * Smart windowing — pills and ellipses are fixed-width "window slots".
+ * A slot leaving the window collapses (width -> 0, gap compensated by a
+ * negative margin, fade + shrink) while the incoming slot expands, so the
+ * whole row reads as one fluid slide instead of pills popping in and out.
+ * `display` transitions with allow-discrete keep leaving slots rendered
+ * until their collapse finishes; @starting-style drives the entry morph.
+ */
+.pag__item,
+.pag__ellipsis {
+    --pag-slot-w: var(--buttons-height-small);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--pag-slot-w);
+    min-width: 0;
+    height: var(--buttons-height-small);
+    padding: 0;
+    overflow: clip;
+    font-family: var(--font-ui);
+    font-size: var(--text-small);
+    user-select: none;
+    transition:
+        color 0.22s ease,
+        background-color 0.22s ease,
+        border-color 0.22s ease,
+        transform 0.3s cubic-bezier(0.34, 1.3, 0.45, 1),
+        width 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+        margin 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.24s ease,
+        display 0.32s allow-discrete;
+}
+
+@starting-style {
+    .pag--pills .pag__item,
+    .pag--pills .pag__ellipsis {
+        width: 0;
+        margin-inline: calc(var(--spacing-2) / -2);
+        opacity: 0;
+        transform: scale(0.6);
+    }
+}
+
+.pag__item {
+    font-weight: var(--pills-typography-pag-item-font-weight, 500);
+    border-radius: var(--pag-control-radius);
+    cursor: pointer;
+}
+
+.pag__item:active {
+    transform: scale(0.85);
+}
+
+.pag__item:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 0px;
+}
+
+.pag__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--buttons-height-small);
+    height: var(--buttons-height-small);
+    border-radius: var(--pag-control-radius);
+    cursor: pointer;
+    user-select: none;
+    color: var(--text-muted);
+    transition: var(--pills-motion-pag-arrow-transition, color 0.25s ease);
+}
+
+.pag__arrow:hover {
+    color: var(--text);
+}
+
+.pag__arrow:active {
+    transform: scale(0.9);
+}
+
+.pag__arrow:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+}
+
+.pag__nav-zone {
+    position: relative;
+    width: var(--buttons-height-small);
+    height: var(--buttons-height-small);
+    flex-shrink: 0;
+}
+
+.pag__nav-zone .pag__arrow {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--pills-motion-pag-nav-zone-pag-arrow-transition, opacity 0.25s ease);
+}
+
+.pag:has(input:nth-of-type(1):checked) .pag__nav-zone [data-when="1"],
+.pag:has(input:nth-of-type(2):checked) .pag__nav-zone [data-when="2"],
+.pag:has(input:nth-of-type(3):checked) .pag__nav-zone [data-when="3"],
+.pag:has(input:nth-of-type(4):checked) .pag__nav-zone [data-when="4"],
+.pag:has(input:nth-of-type(5):checked) .pag__nav-zone [data-when="5"],
+.pag:has(input:nth-of-type(6):checked) .pag__nav-zone [data-when="6"],
+.pag:has(input:nth-of-type(7):checked) .pag__nav-zone [data-when="7"],
+.pag:has(input:nth-of-type(8):checked) .pag__nav-zone [data-when="8"],
+.pag:has(input:nth-of-type(9):checked) .pag__nav-zone [data-when="9"] {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+nav.pag .pag__nav-zone .pag__arrow.pag__arrow--off[data-when] {
+    opacity: 0.2;
+    pointer-events: none;
+    cursor: default;
+}
+
+.pag--pills .pag__item {
+    position: relative;
+    isolation: isolate;
+    border-radius: var(--pag-control-radius);
+    color: var(--text);
+    background: var(--ghost);
+    background-clip: padding-box;
+    border: var(--pills-border-pag-pills-pag-item-border, 1px solid transparent);
+}
+
+/* Accent fill lives on a pseudo-element so the selection can grow from the
+   pill's centre and hand off between neighbours instead of hard-swapping. */
+.pag--pills .pag__item::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    border-radius: inherit;
+    background: var(--pag-accent-fill);
+    opacity: 0;
+    transform: scale(0.45);
+    transition:
+        opacity 0.2s ease,
+        transform 0.32s cubic-bezier(0.34, 1.35, 0.45, 1);
+}
+
+.pag--pills .pag__item:hover {
+    border-color: var(--text);
+}
+
+.pag__ellipsis {
+    --pag-slot-w: calc(var(--buttons-height-small) * 0.62);
+    /* Not bare --text-muted: the pill bar's 8% primary tint costs the muted
+       companion ~0.4 of ratio, which parked this glyph at 4.0-4.3:1 on
+       saturated light systems (finesse, inkpage, tensor). Carrying toward
+       --text recovers it in both themes while staying visibly quieter. */
+    color: color-mix(in srgb, var(--text-muted) 70%, var(--text));
+    font-weight: var(--pills-typography-pag-ellipsis-font-weight, 600);
+    letter-spacing: 0.08em;
+}
+
+/*
+ * Window states — first and last page pills are anchored, the middle
+ * window slides with the current page and ellipses appear only when a
+ * real gap exists:
+ *   1-2: 1 2 3 ... 9        6: 1 ... 5 6 7 ... 9
+ *     3: 1 2 3 4 ... 9      7: 1 ... 6 7 8 9
+ *     4: 1 ... 3 4 5 ... 9  8: 1 ... 7 8 9
+ *     5: 1 ... 4 5 6 ... 9  9: 1 ... 8 9
+ * The declarations below are the collapsed (out-of-window) state that
+ * each slot animates to before display:none lands.
+ */
+.pag--pills:has(input:nth-of-type(1):checked) :is(.pag__pill--p4, .pag__pill--p5, .pag__pill--p6, .pag__pill--p7, .pag__pill--p8, .pag__ellipsis--left),
+.pag--pills:has(input:nth-of-type(2):checked) :is(.pag__pill--p4, .pag__pill--p5, .pag__pill--p6, .pag__pill--p7, .pag__pill--p8, .pag__ellipsis--left),
+.pag--pills:has(input:nth-of-type(3):checked) :is(.pag__pill--p5, .pag__pill--p6, .pag__pill--p7, .pag__pill--p8, .pag__ellipsis--left),
+.pag--pills:has(input:nth-of-type(4):checked) :is(.pag__pill--p2, .pag__pill--p6, .pag__pill--p7, .pag__pill--p8),
+.pag--pills:has(input:nth-of-type(5):checked) :is(.pag__pill--p2, .pag__pill--p3, .pag__pill--p7, .pag__pill--p8),
+.pag--pills:has(input:nth-of-type(6):checked) :is(.pag__pill--p2, .pag__pill--p3, .pag__pill--p4, .pag__pill--p8),
+.pag--pills:has(input:nth-of-type(7):checked) :is(.pag__pill--p2, .pag__pill--p3, .pag__pill--p4, .pag__pill--p5, .pag__ellipsis--right),
+.pag--pills:has(input:nth-of-type(8):checked) :is(.pag__pill--p2, .pag__pill--p3, .pag__pill--p4, .pag__pill--p5, .pag__pill--p6, .pag__ellipsis--right),
+.pag--pills:has(input:nth-of-type(9):checked) :is(.pag__pill--p2, .pag__pill--p3, .pag__pill--p4, .pag__pill--p5, .pag__pill--p6, .pag__pill--p7, .pag__ellipsis--right) {
+    display: none;
+    width: 0;
+    margin-inline: calc(var(--spacing-2) / -2);
+    opacity: 0;
+    transform: scale(0.6);
+}
+
+.pag--pills:has(input:nth-of-type(1):checked) > .pag__pill--p1,
+.pag--pills:has(input:nth-of-type(2):checked) > .pag__pill--p2,
+.pag--pills:has(input:nth-of-type(3):checked) > .pag__pill--p3,
+.pag--pills:has(input:nth-of-type(4):checked) > .pag__pill--p4,
+.pag--pills:has(input:nth-of-type(5):checked) > .pag__pill--p5,
+.pag--pills:has(input:nth-of-type(6):checked) > .pag__pill--p6,
+.pag--pills:has(input:nth-of-type(7):checked) > .pag__pill--p7,
+.pag--pills:has(input:nth-of-type(8):checked) > .pag__pill--p8,
+.pag--pills:has(input:nth-of-type(9):checked) > .pag__pill--p9 {
+    color: var(--pag-accent-text);
+    border-color: transparent;
+    transform: scale(1.08);
+}
+
+.pag--pills:has(input:nth-of-type(1):checked) > .pag__pill--p1::before,
+.pag--pills:has(input:nth-of-type(2):checked) > .pag__pill--p2::before,
+.pag--pills:has(input:nth-of-type(3):checked) > .pag__pill--p3::before,
+.pag--pills:has(input:nth-of-type(4):checked) > .pag__pill--p4::before,
+.pag--pills:has(input:nth-of-type(5):checked) > .pag__pill--p5::before,
+.pag--pills:has(input:nth-of-type(6):checked) > .pag__pill--p6::before,
+.pag--pills:has(input:nth-of-type(7):checked) > .pag__pill--p7::before,
+.pag--pills:has(input:nth-of-type(8):checked) > .pag__pill--p8::before,
+.pag--pills:has(input:nth-of-type(9):checked) > .pag__pill--p9::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (max-width: 480px) {
+    .pag-container {
+        padding: var(--spacing-6) var(--spacing-4);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: var(--pills-motion-root-animation-duration, 0.01s) !important;
+        animation-iteration-count: var(--pills-motion-root-animation-iteration-count, 1) !important;
+        transition-duration: var(--pills-motion-root-transition-duration, 0.01s) !important;
+    }
+}
+
+.pag-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+:root {
+    color-scheme: light;
+
+    --color-background: #fafaf9;
+    --color-surface: #f5f5f4;
+    --color-surface-soft: #e8e7e5;
+    --color-surface-strong: #e1dfde;
+    --color-surface-card: #f6f6f5;
+    --surface-muted: #e8e7e5;
+    --surface-raised: #f6f6f5;
+
+    --color-primary: #c2410c;
+    --color-primary-hover: #9a3412;
+    --color-primary-light-readable: #c2410c;
+    --color-on-primary: #ffffff;
+    --color-on-primary-hover: #ffffff;
+    --primary-ink: #c2410c;
+    --primary-accent: #f59e0b;
+    --primary-accent-ink: #000000;
+
+    --color-text-primary: #1c1917;
+    --color-text-secondary: #57534e;
+    --color-secondary-light-readable: #57534e;
+    --color-neutral: #78716c;
+    --color-neutral-readable: #756e69;
+    --color-border: #d6d3d1;
+
+    --color-accent: #f59e0b;
+    --color-warning: #d97706;
+    --color-error: #dc2626;
+    --color-success: #16a34a;
+    --selection-fill: #f59e0b;
+    --selection-fill-hover: #f59e0b;
+    --selection-ink: #000000;
+    --selection-ink-hover: #000000;
+    --selection-soft: #f5eee1;
+    --selection-soft-ink: #946007;
+    --selection-border: #f5cd89;
+
+    --ghost-bg: rgba(194, 65, 12, 0.03);
+    --ghost-hover: rgba(194, 65, 12, 0.06);
+    --focus-ring: rgba(194, 65, 12, 0.12);
+    --shadow-light: rgba(28, 25, 23, 0.06);
+    --card-shadow: none;
+    --shadow-card: none;
+    --elevation-card: none;
+
+    --font-ui: 'Source Sans 3', system-ui, sans-serif;
+    --font-body: 'Source Sans 3', system-ui, sans-serif;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-code: 'Source Sans 3', system-ui, sans-serif;
+
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-base: 20px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-5: 20px;
+    --spacing-6: 24px;
+    --spacing-8: 32px;
+
+    --rounded-xs: 4px;
+    --rounded-sm: 8px;
+    --rounded-md: 12px;
+    --rounded-lg: 12px;
+    --rounded-full: 30px;
+    --rounded-r9999: 30px;
+    --cards-radius: 12px;
+    --chips-radius: 30px;
+    --chips-padding: 8px 12px;
+    --buttons-height-small: 32px;
+
+    --motion-duration-fast: 180ms;
+    --motion-duration-standard: 300ms;
+    --motion-duration-slow: 480ms;
+    --motion-ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+    --motion-ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+    --motion-ease-exit: cubic-bezier(0.32, 0, 0.67, 0);
+    --motion-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
